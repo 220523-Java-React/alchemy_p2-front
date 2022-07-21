@@ -1,13 +1,11 @@
 import React from 'react'
 import '../../App.css'
-import Cards from '../Cards'
 import HeroSection from '../HeroSection'
 
 export default function Games(){
     return (
         <>
-            <HeroSection />
-            <Cards/>
+            <h1 className ="Games">TYhese are games</h1>
         </>
         
     )
