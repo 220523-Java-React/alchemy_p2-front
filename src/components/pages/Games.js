@@ -1,11 +1,14 @@
 import React from 'react'
 import '../../App.css'
+import Cards from '../Cards'
+import HeroSection from '../HeroSection'
 
 export default function Games(){
     return (
-        <div >
-            <h1 className='Games'>HEYYYYY YOUUUU GUYSSSSSS GAMES</h1>
-        </div>
+        <>
+            <HeroSection />
+            <Cards/>
+        </>
         
     )
 }
