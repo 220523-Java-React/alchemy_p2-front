@@ -17,9 +17,9 @@ export default function Games(){
     
     const getWin =() => {
         
-        setWin("You Win!")
+        setWin("You Win! YOUR SCORE: " + (100-counter))
         setLose("")
-        let score = 50 - counter;
+        let score = 100 - counter;
         counter = 0;
         var temp = ""
         human = temp
@@ -33,16 +33,16 @@ export default function Games(){
                     "userName": human,
                     "score": score
                 })
-
-            })
+            }
+        )
+        axios.get('players').then((response) => console.log(response.data))
         console.log(score)
         
-
         
     }
     const getLose =() => {
     
-        setLose("You have lost "+counter + " times -_-")
+        setLose("Attempted: "+counter + " times")
         setWin("")
         counter = counter + 1;
     }
@@ -61,6 +61,11 @@ export default function Games(){
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
                 <p></p>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
@@ -70,7 +75,17 @@ export default function Games(){
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
                 <p></p>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
@@ -88,6 +103,25 @@ export default function Games(){
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <p></p>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
                 <p></p>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
@@ -97,6 +131,11 @@ export default function Games(){
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
                 <p></p>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
@@ -106,7 +145,43 @@ export default function Games(){
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
                 <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
                 <p></p>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <p></p>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <button onClick={getLose}>Lose</button>
+                <p></p>
+                
+                
+                
 
                 
 
