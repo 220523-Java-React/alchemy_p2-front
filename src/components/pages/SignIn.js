@@ -9,7 +9,7 @@ const SignIn = () => {
     const userRef = useRef();
     const errRef = useRef();
 
-    const [username, setUserName] = useState('');
+    const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
@@ -20,14 +20,14 @@ const SignIn = () => {
 
     useEffect(() => {
         setErrMsg('');
-    }, [username, password])
+    }, [userName, password])
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
             const response = await axios.post(LOGIN_URL,
-                JSON.stringify({ username, password }),
+                JSON.stringify({ userName, password }),
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
@@ -36,8 +36,8 @@ const SignIn = () => {
             console.log(JSON.stringify(response?.data));
             //console.log(JSON.stringify(response));
             const accessToken = response?.data?.accessToken;
-            const roles = response?.data?.roles;
-            setAuth({ username, password, roles, accessToken });
+            //const roles = response?.data?.roles;
+            setAuth({ userName, password});
             setUserName('');
             setPassword('');
             setSuccess(true);
@@ -70,14 +70,14 @@ const SignIn = () => {
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                     <h1>Sign In</h1>
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="username">Username:</label>
+                        <label htmlFor="username">UserName:</label>
                         <input
                             type="text"
                             id="username"
                             ref={userRef}
                             autoComplete="off"
                             onChange={(e) => setUserName(e.target.value)}
-                            value={username}
+                            value={userName}
                             required
                         />
 

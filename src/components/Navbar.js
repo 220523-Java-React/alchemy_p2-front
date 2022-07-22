@@ -7,9 +7,7 @@ import Axios from 'axios';
 
 
 
-
-
-function NavBar() {
+function NavBar({user}) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -69,5 +67,6 @@ function NavBar() {
     </>
   );
 }
+
 
 export default NavBar

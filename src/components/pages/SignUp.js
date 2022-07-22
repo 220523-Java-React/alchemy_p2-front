@@ -12,12 +12,9 @@ const REGISTER_URL = '/SignUp';
 
 
 const Register = () => {
-
-
     
     const userRef = useRef();
     const errRef = useRef();
-
 
     const [user, setUser] = useState('');
     const [validName, setValidName] = useState(false);
@@ -35,7 +32,7 @@ const Register = () => {
     const [success, setSuccess] = useState(false);
 
     const viewUser=()=>{
-        axios.get('/users').then((res) => {console.log(res)})
+        axios.get('/users').then((res) => {console.log("Your account is created")})
     }
 
     const makeUser =()=>{
@@ -61,8 +58,6 @@ const Register = () => {
         console.log(pwd)  
     }
     
-
-
 
     useEffect(() => {
         userRef.current.focus();
@@ -130,7 +125,6 @@ const Register = () => {
 
     return (
         <>
-    
             <h1 className='SignUp'>
             {success ? (
                 <section >

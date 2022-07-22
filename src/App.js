@@ -6,12 +6,9 @@ import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Games from './components/pages/Games';
 import Leaderboards from './components/pages/Leaderboards';
-import Profile from './components/pages/Profiles';
+import Profile from './components/pages/Profile';
 import SignIn from './components/pages/SignIn';
 import SignUp from './components/pages/SignUp';
-
-
-
 
 
 function App() {
@@ -33,4 +30,3 @@ function App() {
 }
 
 export default App;
-
